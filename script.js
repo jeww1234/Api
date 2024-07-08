@@ -19,7 +19,7 @@ const API_KEY = `5ca19004f97f4f5f9d74d0fbb95b21dc`;
 let news = [];
 
 const getLatesNews = async () => {
-    const url = new URL(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`);
+    const url = new URL(`https://jjhapi.netlify.app/`);
     //URL -> 인스턴스 new-만들기
     const response = await fetch(url);
     const data = await response.json();   
